@@ -1,0 +1,96 @@
+GIT - Распределеленная система управления версиями
+ Global Information Tracker
+
+git --version - установлен ли git
+
+
+
+
+git config --local user.name "Vladimir Yankers"
+
+First !!!!!!!! Создаем данные о пользователе!
+
+git config --global user.name "Vladimir"
+git config --global user.email Vovarojko@gmail.com
+git config --list - проверить найтройки git
+q - quit - покидать
+
+Команды Linux:
+Vova@Yankers MINGW64 ~/Desktop
+$ mkdir my-project
+
+Vova@Yankers MINGW64 ~/Desktop
+$ cd my-project/
+
+Vova@Yankers MINGW64 ~/Desktop/my-project
+$ pwd
+/c/Users/Vova/Desktop/my-project
+
+Vova@Yankers MINGW64 ~/Desktop/my-project
+$ ls
+
+Vova@Yankers MINGW64 ~/Desktop/my-project
+$ echo "Some text" > file.txt
+
+Vova@Yankers MINGW64 ~/Desktop/my-project
+$ ls
+file.txt
+
+Vova@Yankers MINGW64 ~/Desktop/my-project
+$ cat file.txt
+Some text
+
+Vova@Yankers MINGW64 ~/Desktop/my-project
+$ rm file.txt
+
+Vova@Yankers MINGW64 ~/Desktop/my-project
+$ ls
+
+Vova@Yankers MINGW64 ~/Desktop/my-project
+
+
+
+Создаём репозиторий:
+
+git init - в папке которой мы хотим создать - создаётся папка .git - но она может быть скрыта
+ls -la - Mac
+ls -Forse - отобразить скрытые файлы и папки (Windwows)
+1) Текущая директория
+
+Создаём репозиторий git init (по умолчанию мы в ветке Master)
+git branch -m main - переименование веб-разработки
+
+2) Когда файлы созданы и Git следить за их состоянием
+
+Git status (staging area - index)
+
+
+
+0) git add - добавление в stage area (index)
+1) Git add -A  -  все файлы в репозитории, добовляем для слежения
+2) git add main.*css
+
+Состояние git commit
+
+git commit -a -m "ffirst commit" ( -m указать сообщение, если не указать, то высветиться сообщение что указать!)
+git commit -m "messege"
+
+git log - смотрим все commit
+git checkout <commit hash> - SHA1 перемещаемся по commit (head - перемещается по commit)
+git checkout <branch name> - переход по ветке
+
+    	Push в облако!!!	
+1)git remote add origin https://github.com/Gunplay/project.git
+
+2)git branch -M main
+
+3)git push -u origin main -    -u пушиться по умолчанию в данный репозиторий
+
+Клонировани на другой комп!!
+PS D:\Learn HTML, CSS\03 Модуль 3. Необходимые технологии для веб-разработчика и продвинутая практика> cd work
+PS D:\Learn HTML, CSS\03 Модуль 3. Необходимые технологии для веб-разработчика и продвинутая практика\work> ls
+PS D:\Learn HTML, CSS\03 Модуль 3. Необходимые технологии для веб-разработчика и продвинутая практика\work> git clone https://github.com/Gunplay/project.git project_2
+
+Git pull - для синхронизации данных!!!!!! Когда работаем в команде!
+
+
