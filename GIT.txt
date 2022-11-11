@@ -75,14 +75,21 @@ Git status (staging area - index)
 git commit -a -m "ffirst commit" ( -m указать сообщение, если не указать, то высветиться сообщение что указать!)
 git commit -m "messege"
 
-git log - смотрим все commit
+git log - смотрим все commit - SHA1
 git checkout <commit hash> - SHA1 перемещаемся по commit (head - перемещается по commit)
 git checkout <branch name> - переход по ветке
 
 git add file-text.txt - один файл в staging area (index)
 git add . - все файлы в index
 
-git commit -m "First-commt" создали с sha1 9ad8bc8
+git commit -m "First-commit" создали с sha1 9ad8bc8
+
+commit 90432a87849012ae32707bf702427c517ef493fa (HEAD -> master) 90 -название папки , остальное название текстового файла
+Author: Vova Yankers <vovarojko@gmail.com>
+Date:   Fri Nov 11 16:59:23 2022 +0200
+
+git cat-file -t 90432a  - commit
+git cat-file -p 90432a  - кто создал commit and кто автор (cодержимое)
 
     	Push в облако!!!	
 1)git remote add origin https://github.com/Gunplay/project.git
