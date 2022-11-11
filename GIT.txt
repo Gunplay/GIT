@@ -75,7 +75,7 @@ Git status (staging area - index)
 git commit -a -m "ffirst commit" ( -m указать сообщение, если не указать, то высветиться сообщение что указать!)
 git commit -m "messege"
 
-git log - смотрим все commit - SHA1
+git log - смотрим все commit - SHA1 и указывает на каком commit мы находимся!!!!!!!!!!!!!
 git checkout <commit hash> - SHA1 перемещаемся по commit (head - перемещается по commit)
 git checkout <branch name> - переход по ветке
 
@@ -88,8 +88,18 @@ commit 90432a87849012ae32707bf702427c517ef493fa (HEAD -> master) 90 -назва�
 Author: Vova Yankers <vovarojko@gmail.com>
 Date:   Fri Nov 11 16:59:23 2022 +0200
 
+Перемешение по SHA1:
 git cat-file -t 90432a  - commit
-git cat-file -p 90432a  - кто создал commit and кто автор (cодержимое)
+git cat-file -p 90432a  - кто создал commit and кто автор (cодержимое) :
+$ git cat-file -p f7b9c
+040000 tree 74b6896366125aad77337f7f7c251bd3ea0c9ef5    3 areas git
+100644 blob cbef9cf735761ebc2581fe215d89b314aab2a2e0    GIT.txt
+040000 tree 32ef472c6b7a64d9f397090249af49dc12c896e2    first-subfolder
+100644 blob 0d5c361af63517ec1ef03f7bf247c95e03411420    index.html
+100644 blob e69de29bb2d1d6434b8b29ae775ad8c2e48c5391    script.js
+040000 tree 71234083c8cc74e9af46b881fa501869e8f53519    second-subfolder
+
+
 
     	Push в облако!!!	
 1)git remote add origin https://github.com/Gunplay/project.git
