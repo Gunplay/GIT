@@ -79,6 +79,11 @@ git log - смотрим все commit
 git checkout <commit hash> - SHA1 перемещаемся по commit (head - перемещается по commit)
 git checkout <branch name> - переход по ветке
 
+git add file-text.txt - один файл в staging area (index)
+git add . - все файлы в index
+
+git commit -m "First-commt" создали с sha1 9ad8bc8
+
     	Push в облако!!!	
 1)git remote add origin https://github.com/Gunplay/project.git
 
